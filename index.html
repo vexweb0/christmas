@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas List</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #333;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #2e2e2e;
+      margin-bottom: 20px;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+      letter-spacing: 2px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 800px;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .scrollable {
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .category {
+      padding: 20px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .category-sports {
+      background: #f38181;
+    }
+
+    .category-gadgets {
+      background: #a8e6cf;
+    }
+
+    .category-gaming {
+      background: #f9d56e;
+      color: #333;
+    }
+
+    .category-technology {
+      background: #9c88ff;
+    }
+
+    .item-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .item-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .item-list li:last-child {
+      border-bottom: none;
+    }
+
+    .item-list li:hover {
+      background: #f7f7f7;
+      transform: scale(1.02);
+    }
+
+    .item-icon {
+      font-size: 1rem;
+      font-weight: bold;
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #f38181;
+      color: #fff;
+      transition: all 0.3s ease;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .item-list li:hover .item-icon {
+      transform: rotate(360deg) scale(1.1);
+      background: #a8e6cf;
+    }
+
+    /* Add responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .category {
+        font-size: 1.5rem;
+      }
+
+      .item-list li {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎄 My Christmas List 🎁</h1>
+  <div class="container">
+    <div class="scrollable">
+      <!-- Sports -->
+      <div class="category category-sports">Sports</div>
+      <ul class="item-list">
+        <li><span>Glowing Basketball</span><span class="item-icon">01</span></li>
+      </ul>
+      <!-- Gadgets -->
+      <div class="category category-gadgets">Tools</div>
+      <ul class="item-list">
+        <li><span>Lighter</span><span class="item-icon">02</span></li>
+        <li><span>New Headphones</span><span class="item-icon">03</span></li>
+      </ul>
+      <!-- Gaming -->
+      <div class="category category-gaming">Roblox</div>
+      <ul class="item-list">
+        <li><span>Robux</span><span class="item-icon">04</span></li>
+        <li><span>Roblox Premium</span><span class="item-icon">05</span></li>
+        <li><span>Roblox Toys (w/ items)</span><span class="item-icon">06</span></li>
+      </ul>
+      <!-- Technology -->
+      <div class="category category-technology">Technology</div>
+      <ul class="item-list">
+        <li><span>That Pen</span><span class="item-icon">07</span></li>
+        <li><span>ChatGPT Pro</span><span class="item-icon">08</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
